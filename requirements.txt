@@ -1,0 +1,9 @@
+streamlit
+pinecone
+llama-index
+openai
+anthropic
+python-dotenv
+llama-index-vector-stores-pinecone
+llama-index-llms-anthropic
+llama-index-embeddings-openai
