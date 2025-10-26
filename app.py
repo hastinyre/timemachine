@@ -91,8 +91,8 @@ personalities = {
 }
 
 # --- 6. Streamlit UI Setup ---
-st.set_page_config(page_title="Pantheon of Thinkers", layout="centered")
-st.title("🏛️ Pantheon of Thinkers")
+st.set_page_config(page_title="Talk to Niccolo Machiavelli", layout="centered")
+st.title("🏛️ Talk to Niccolo Machiavelli")
 st.markdown("Chat with historical figures, powered by their actual writings.")
 
 # Sidebar for personality selection
@@ -174,4 +174,5 @@ if prompt := st.chat_input(f"Ask {selected_personality_name} a question..."):
             error_message = f"Sorry, I encountered an error: {e}"
             message_placeholder.error(error_message)
             st.session_state.messages.append({"role": "assistant", "content": error_message})
+
             print(f"Error during query execution: {e}") # Log error to terminal too
